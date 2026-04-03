@@ -3,7 +3,7 @@ import { ProductList } from './ProductList';
 import { Product, SortType } from './types';
 
 const getSortedProducts = (list: Product[], type: SortType): Product[] => {
-  if (!type || type === SortType.Default) {
+  if (type === SortType.Default) {
     return [...list];
   }
 
